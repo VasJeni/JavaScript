@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>area</title>
+        <script>
+            var v="";
+            var s="";
+                sFirst="";
+                sSecond="";
+            r="3"; //radius
+            h="4"; //height
+            pi=(Math.PI);
+            prompt(r, 'Радиус');
+            prompt(h, 'Ширина');
+            v = pi* (r*r)*h;
+            s=  (pi *2 )* r *h;
+            document.writeln('V-Вобъем = ' + v + '<br>');
+            document.writeln('S- Площадь боковой поверхности = ' + s +'<br>');
+            sFirst= 2*pi*r*h+2*pi*(r*r);
+            document.writeln('S общая площадь по формуле S= 2 π rh+ 2 π r<sup>2</sup> = ' +sFirst + '<br>');
+            sSecond= 2*pi*r*((+h)+(+r));
+            document.writeln('S общая площадь по формуле  S=2 π r(h+ r) = ' + sSecond + '<br>');
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
