@@ -6,8 +6,45 @@
     </head>
     <body>
         <script>
-            var a=5;
-                b=8;
+            var a = undefined;
+            b = undefined;
+            b = +prompt('width', b);
+            a = +prompt('height', a);
+
+            for (var i = 1; i <= a; i++) {
+                for (var k = 1; k <= b; k++) {
+                    document.writeln('*');
+                }
+                document.writeln('<br>');
+            }
+            document.writeln('<hr>');
+            for (var u = a; u >= 1; u--) {
+                for (var l = u; l <= b; l++) {
+                    document.writeln('*');
+                }
+                document.writeln('<br>');
+            }
+            document.writeln('<hr>');
+            document.writeln('<div style="text-align: center; width: 300px; height: 300px;">');
+
+            for (var q =a; q>=1; q--){
+                for (var w =q; w<=b; w++){
+                    document.writeln('*');
+                }
+                document.writeln('<br>');
+            }
+            document.writeln('</div>');
+            document.writeln('<hr>');
+
+            if() {
+
+            }
+            else if () {
+
+            }
+            else{
+
+            }
 
         </script>
     </body>
