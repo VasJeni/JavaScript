@@ -9,14 +9,19 @@
             c=0;
             b=undefined;
             a=undefined;
+            e=0;
         a = +prompt('title',a);
         b = +prompt('title',b);
         document.writeln(a +' '+b+'<br>');
         while(a<=b){
             c+=a;
+            if (a%2) {
+                e+=a;
+            }
             a++;
         }
         document.writeln(c);
+        document.writeln(e);
 
     </script>
     <body>
