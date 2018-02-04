@@ -6,8 +6,8 @@
     </head>
     <body>
         <script>
-            var a= [1, 4, 66, 88,  25, 68,  88, 56, 78, 234235, 65756,  657567657,2342];
-            b=[1, 2,3];
+            var a= [1, 4, 66, 88,  25, 68,  88, 56, 78, 234235, 65756,  657567657,2342, 3, 6, 76, 75];
+            b=[];
             max=0;
             min=undefined;
             sum=0;
@@ -15,30 +15,32 @@
             gg=undefined;
 
 
-            for (var i=0; i<a.length; i++){
+
+            for (var i=0; i<a.length; i++){ //перебираем масив а и в переменную max записываем максимальное значение
                 if (max<a[i]){
                     max=a[i];
                 }
             }
             min=max;
-            for (i=0; i<a.length; i++){
+            for (i=0; i<a.length; i++){ //перебираем масив и в переменную min записіваем минимальное значение
                 if (min>a[i]){
                     min=a[i];
                 }
 
             }
-            for (i=0; i<a.length; a++){
-//                if (sum<a[i]) {
-//                    sum=a[i];
-//                }
-//                else
-                    sum=(sum+a[i]);
+            for (ii=0; ii<a.length; ii++){ //перебираем масив и постоянно плюсуем значения в переменную
+                    sum+=a[ii];
             }
 
-            document.writeln('max value ' +max + '<br>');
-            document.writeln('min value '+ min + '<br>');
-            document.writeln('sum all elements'+ sum + '<br>');
-            document.writeln('avarage all elements'+c);
+            for (iii=0; iii<a.length; iii++) {
+                if (a[iii]%2) b.push(a[iii])
+            }
+          //  document.writeln(a.length+ '<br>');
+            document.writeln('max value in array a= ' +max + '<br>');
+            document.writeln('min value in array a= '+ min + '<br>');
+            document.writeln('sum all elements in array a= '+ sum + '<br>');
+            document.writeln('avarage all elements in array a= '+sum / a.length + '<br>');
+            document.writeln('all odd elements in array a= ' + b);
         </script>
     </body>
 </html>
