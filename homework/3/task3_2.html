@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>array min max</title>
+    </head>
+    <body>
+        <script>
+            var a= [1, 4, 66, 88,  25, 68,  88, 56, 78, 234235, 65756,  657567657,2342];
+            b=[1, 2,3];
+            max=0;
+            min=undefined;
+            sum=0;
+            c=0;
+            gg=undefined;
+
+
+            for (var i=0; i<a.length; i++){
+                if (max<a[i]){
+                    max=a[i];
+                }
+            }
+            min=max;
+            for (i=0; i<a.length; i++){
+                if (min>a[i]){
+                    min=a[i];
+                }
+
+            }
+            for (i=0; i<a.length; a++){
+//                if (sum<a[i]) {
+//                    sum=a[i];
+//                }
+//                else
+                    sum=(sum+a[i]);
+            }
+
+            document.writeln('max value ' +max + '<br>');
+            document.writeln('min value '+ min + '<br>');
+            document.writeln('sum all elements'+ sum + '<br>');
+            document.writeln('avarage all elements'+c);
+        </script>
+    </body>
+</html>
