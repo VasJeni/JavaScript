@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>array</title>
+        <link rel="stylesheet" href="css/table.css">
+    </head>
+    <body>
+        <script>
+            var abc=[['-', 0, 0, 0, 0], [0, '-', 0, 0,0], [0, 0, '-', 0, 0], [0, 0, 0, '-', 0], [0, 0, 0, 0, '-']];
+            document.writeln('<table>');
+            for (var i=0; i<abc.length; i++) {
+                document.writeln('<tr>');
+                for (var ii=0; ii<abc[i].length; ii++){
+                    document.writeln('<td>'+abc[i][ii]+'</td>');
+                }
+                document.writeln('</tr>');
+            }
+            document.writeln('</table>');
+                    </script>
+    </body>
+</html>
