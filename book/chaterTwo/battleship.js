@@ -28,7 +28,7 @@ while (isSunk == false){
 }
     var status= "you took " + guesses + " guesses to sink the battleship, " + "witch means you shooting accuracy was " + (3/guesses);
     alert(status);
-
+//fasdasdfasfd
 
 
 
