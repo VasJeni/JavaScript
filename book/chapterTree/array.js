@@ -29,7 +29,7 @@ var hightScore=0;
 
 function maxBubbles (array){         //функция на перебор масива и посик максимального значения
     for (var i=0; i<array.length; i++){
-        output=("Bubble solution #" + i + "score: " + array[i]);
+        output=("Bubble solution #" + i + " score: " + array[i]);
         console.log(output);
         if (array[i]>hightScore) {
             hightScore=array[i];
@@ -49,7 +49,7 @@ maxBubbles(scores);
 getBestResult(scores);
 
 console.log("Solution with the best scores " + maxscores);
-console.log("Best scores" + hightScore);
+console.log("Best scores " + hightScore);
 
 
 
